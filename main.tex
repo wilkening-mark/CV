@@ -1,0 +1,40 @@
+%------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%------------------------------------------------------------------------------
+
+% Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper,
+% legalpaper, executivepaper or landscape; font families: sans or roman
+\documentclass[10pt,letterpaper,roman]{moderncv}
+
+% CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and % 'banking'
+\moderncvstyle{banking}
+
+% CV color - options include: 'blue' (default), 'orange', 'green', 'red',
+% 'purple', 'grey' and 'black'
+\moderncvcolor{black}
+
+% Reduce document margins
+\usepackage[scale=0.87]{geometry}
+
+% Uncomment to change the width of the dates column
+%\setlength{\hintscolumnwidth}{3cm}
+
+% For the 'classic' style, uncomment to adjust the width of the space allocated
+% to your name
+%\setlength{\makecvtitlenamewidth}{5cm}
+
+\input{contact}
+%------------------------------------------------------------------------------
+\begin{document}
+\makecvtitle
+\input{education}
+\input{interests}
+\input{awards}
+\input{publications}
+\input{research}
+\input{professional-experience}
+\input{teaching}
+\input{project-experience}
+\input{professional-activities}
+
+\end{document}
